@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Страница продуктов{% endblock %}
+
+{% block content %}
+<h1 style="display: flex; flex-direction: column; gap: 20px; align-items: center; font-size: 120px;">
+    КАТАЛОГ
+</h1>
+
+<div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 20px;">
+    {% if user.is_authenticated %}
+        {% if user.is_staff or user.is_superuser %}
+        <div class="controls">
+            <!-- Поиск -->
+            <input type="text" id="search" placeholder="Поиск..." value="{{ search_query }}">
+            <!-- Фильтрация по категориям -->
+            <label for="category-filter" class="form-label">Категория:</label>
+            <select id="category-filter" class="form-select d-inline-block w-auto">
+                {% for cat_value, cat_label in categories %}
+                    <option value="{{ cat_value }}" 
+                            {% if category_filter == cat_value %}selected{% endif %}>
+                        {{ cat_label }}
+                    </option>
+                {% endfor %}
+            </select>
+            <!-- Сортировка по остатку на складе -->
+            <select id="sort">
+                <option value="" {% if not sort_order %}selected{% endif %}>Без сортировки</option>
+                <option value="asc" {% if sort_order == 'asc' %}selected{% endif %}>Сортировка по наличию на складе ↑</option>
+                <option value="desc" {% if sort_order == 'desc' %}selected{% endif %}>Сортировка по наличию на складе ↓</option>
+            </select>
+
+            {% if user.is_superuser %}
+                <a href="{% url 'orders:add_product' %}"><button style="margin-right: 2;">Добавить продукт</button></a>
+            {% endif %}
+        </div>
+        {% endif %}
+    {% endif %}
+</div>
+
+<div id="products-container" style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
+    {% include "orders/product_list_partial.html" %}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    let debounceTimer;
+    
+    function updateProducts() {
+        const search = $('#search').val();
+        const category = $('#category-filter').val();
+        const sort = $('#sort').val();
+        
+        $.ajax({
+            url: window.location.pathname,
+            type: 'GET',
+            data: {
+                search: search,
+                category: category,
+                sort: sort
+            },
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            },
+            success: function(data) {
+                $('#products-container').html(data);
+            },
+            error: function(xhr, status, error) {
+                console.error('Ошибка AJAX:', error);
+                alert('Ошибка загрузки данных.');
+            }
+        });
+    }
+
+    // Поиск с задержкой (debounce)
+    if ($('#search').length) {
+        $('#search').on('input', function() {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(updateProducts, 300);
+        });
+    }
+    
+    if ($('#category-filter').length && $('#sort').length) {
+        $('#category-filter, #sort').on('change', function() {
+            updateProducts();
+        });
+    }
+});
+</script>
+{% endblock %}
