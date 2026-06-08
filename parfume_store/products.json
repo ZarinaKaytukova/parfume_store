@@ -1,0 +1,502 @@
+[
+{
+  "model": "orders.pickuppoint",
+  "pk": 1,
+  "fields": {
+    "address": "﻿420151, г. Цветочный, ул. Вишневая, 32"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 2,
+  "fields": {
+    "address": "125061, г. Цветочный, ул. Подгорная, 8"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 3,
+  "fields": {
+    "address": "630370, г. Цветочный, ул. Шоссейная, 2"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 4,
+  "fields": {
+    "address": "400562, г. Цветочный, ул. Зеленая, 32"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 5,
+  "fields": {
+    "address": "614510, г. Цветочный, ул. Маяковского, 47"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 6,
+  "fields": {
+    "address": "410542, г. Цветочный, ул. Светлая, 46"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 7,
+  "fields": {
+    "address": "620839, г. Цветочный, ул. Цветочная, 8"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 8,
+  "fields": {
+    "address": "443890, г. Цветочный, ул. Коммунистическая, 1"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 9,
+  "fields": {
+    "address": "603379, г. Цветочный, ул. Спортивная, 46"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 10,
+  "fields": {
+    "address": "603721, г. Цветочный, ул. Гоголя, 41"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 11,
+  "fields": {
+    "address": "410172, г. Цветочный, ул. Северная, 13"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 12,
+  "fields": {
+    "address": "614611, г. Цветочный, ул. Молодежная, 50"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 13,
+  "fields": {
+    "address": "454311, г. Цветочный, ул. Новая, 19"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 14,
+  "fields": {
+    "address": "660007, г. Цветочный, ул. Октябрьская, 19"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 15,
+  "fields": {
+    "address": "603036, г. Цветочный, ул. Садовая, 4"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 16,
+  "fields": {
+    "address": "394060, г. Цветочный, ул. Фрунзе, 43"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 17,
+  "fields": {
+    "address": "410661, г. Цветочный, ул. Школьная, 50"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 18,
+  "fields": {
+    "address": "625590, г. Цветочный, ул. Коммунистическая, 20"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 19,
+  "fields": {
+    "address": "625683, г. Цветочный, ул. 8 Марта"
+  }
+},
+{
+  "model": "orders.pickuppoint",
+  "pk": 20,
+  "fields": {
+    "address": "450983, г. Цветочный, ул. Комсомольская, 26"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 1,
+  "fields": {
+    "article": "А112Т4",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "large",
+    "price": "4990.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "female",
+    "discount": 7,
+    "stock": 6,
+    "description": "Парфюм с ароматом таинственной розы",
+    "image": ""
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 2,
+  "fields": {
+    "article": "F635R4",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "small",
+    "price": "3990.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "female",
+    "discount": 7,
+    "stock": 13,
+    "description": "Парфюм с ароматом хризантемы, глубокого озера",
+    "image": "products/BLOOM_female_09_f8ZzHq1.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 3,
+  "fields": {
+    "article": "H782T5",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "5000.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "female",
+    "discount": 15,
+    "stock": 5,
+    "description": "Парфюм с ароматом кустовой розы, воспоминания из бабушкиной шкатулки",
+    "image": "products/BLOOM_female_03.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 4,
+  "fields": {
+    "article": "G783F5",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "5900.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "female",
+    "discount": 6,
+    "stock": 8,
+    "description": "Парфюм с ароматом розового мака, тихого и пронзительного",
+    "image": "products/BLOOM_female_04.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 5,
+  "fields": {
+    "article": "J384T6",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "4800.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "female",
+    "discount": 9,
+    "stock": 16,
+    "description": "Парфюм с ароматом бумажного лотоса, тишины воды и медитации",
+    "image": "products/BLOOM_female_05.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 6,
+  "fields": {
+    "article": "D572U8",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "4500.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "female",
+    "discount": 5,
+    "stock": 6,
+    "description": "Парфюм с ароматом карамельной фрезии, прозрачной сладости первого свидания",
+    "image": "products/BLOOM_female_06.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 7,
+  "fields": {
+    "article": "F572H7",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "2220.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "female",
+    "discount": 15,
+    "stock": 14,
+    "description": "Парфюм с ароматом воздушной мимозы, солнечных зайчиков на коже",
+    "image": "products/BLOOM_female_07.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 8,
+  "fields": {
+    "article": "D329H3",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "2220.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "female",
+    "discount": 15,
+    "stock": 4,
+    "description": "Парфюм с ароматом меланхоличной сирени, влажного асфальта и мая",
+    "image": "products/BLOOM_female_08.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 9,
+  "fields": {
+    "article": "B320R5",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "4300.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "female",
+    "discount": 20,
+    "stock": 6,
+    "description": "Парфюм с ароматом дикого лавандового мёда, спокойствия южных полей",
+    "image": "products/BLOOM_female_09.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 10,
+  "fields": {
+    "article": "G432E4",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "2800.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "female",
+    "discount": 30,
+    "stock": 15,
+    "description": "Парфюм с ароматом смолистой камелии, холодного чая и кожаного кресла",
+    "image": "products/BLOOM_female_10.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 11,
+  "fields": {
+    "article": "S213E3",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "4000.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "female",
+    "discount": 30,
+    "stock": 6,
+    "description": "Парфюм с ароматом пьяной туберозы, опасной, неотразимой и ночной",
+    "image": "products/BLOOM_female_11.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 12,
+  "fields": {
+    "article": "E482R4",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "1800.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "female",
+    "discount": 20,
+    "stock": 14,
+    "description": "Парфюм с ароматом солёной морской розы, бриза, цветов и свободы",
+    "image": "products/BLOOM_female_12.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 13,
+  "fields": {
+    "article": "S634B5",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "5500.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "female",
+    "discount": 9,
+    "stock": 0,
+    "description": "Парфюм с ароматом джунглей, рассвета",
+    "image": "products/BLOOM_female_13.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 14,
+  "fields": {
+    "article": "K345R4",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "12000.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "female",
+    "discount": 5,
+    "stock": 3,
+    "description": "Парфюм с ароматом подорожника перистого на побережье",
+    "image": "products/BLOOM_female_14.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 15,
+  "fields": {
+    "article": "O754F4",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "5400.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "female",
+    "discount": 5,
+    "stock": 18,
+    "description": "Парфюм с ароматом жасмина, морской жемчужины",
+    "image": "products/BLOOM_female_15.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 16,
+  "fields": {
+    "article": "G531F4",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "9600.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "male",
+    "discount": 20,
+    "stock": 9,
+    "description": "Парфюм с ароматом обожжённого апельсинового цвета, вулканов и смолы",
+    "image": "products/BLOOM_male_01.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 17,
+  "fields": {
+    "article": "J542F5",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "5000.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "male",
+    "discount": 15,
+    "stock": 0,
+    "description": "Парфюм с ароматом тёмного георгина, запаха сильного дождя",
+    "image": "products/BLOOM_male_02.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 18,
+  "fields": {
+    "article": "B431R5",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "2700.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "male",
+    "discount": 50,
+    "stock": 5,
+    "description": "Парфюм с ароматом жёсткой гвоздики, дыма, виски и хризантем",
+    "image": "products/BLOOM_male_03.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 19,
+  "fields": {
+    "article": "P764G4",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "small",
+    "price": "6800.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "male",
+    "discount": 10,
+    "stock": 1,
+    "description": "Парфюм с ароматом снежного жасмина, абсолютного нуля и розового шума",
+    "image": "products/BLOOM_male_03_qT0KV1H.webp"
+  }
+},
+{
+  "model": "orders.product",
+  "pk": 20,
+  "fields": {
+    "article": "C436G5",
+    "name": "Парфюм",
+    "unit": "Флакон",
+    "volume": "100 мл.",
+    "price": "10200.00",
+    "supplier": "Bloom",
+    "manufacturer": "Bloom",
+    "category": "male",
+    "discount": 5,
+    "stock": 9,
+    "description": "Парфюм с ароматом ночной фиалки, душистого табака",
+    "image": "products/BLOOM_male_05.webp"
+  }
+}
+]
