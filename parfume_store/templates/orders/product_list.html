@@ -8,9 +8,7 @@
     КАТАЛОГ
 </h1>
 
-<div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 20px;">
-    {% if user.is_authenticated %}
-        {% if user.is_staff or user.is_superuser %}
+<div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 20px; flex-wrap: wrap;">
         <div class="controls">
             <!-- Поиск -->
             <input type="text" id="search" placeholder="Поиск..." value="{{ search_query }}">
@@ -35,8 +33,6 @@
                 <a href="{% url 'orders:add_product' %}"><button style="margin-right: 2;">Добавить продукт</button></a>
             {% endif %}
         </div>
-        {% endif %}
-    {% endif %}
 </div>
 
 <div id="products-container" style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
