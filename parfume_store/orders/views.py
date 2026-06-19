@@ -20,28 +20,26 @@ def product_list(request):
     
     categories = [('all', 'Все категории')] + list(Product.CATEGORY_CHOICES)
 
-    if request.user.is_authenticated and (request.user.is_staff or request.user.is_superuser):
-        # Поиск
-        if search_query:
-            products = products.filter(
-                Q(article__icontains=search_query) |
-                Q(name__icontains=search_query) |
-                Q(unit__icontains=search_query) |
-                Q(supplier__icontains=search_query) |
-                Q(manufacturer__icontains=search_query) |
-                Q(category__icontains=search_query) |
-                Q(description__icontains=search_query)
-            )
+    if search_query:
+        products = products.filter(
+            Q(article__icontains=search_query) |
+            Q(name__icontains=search_query) |
+            Q(unit__icontains=search_query) |
+            Q(supplier__icontains=search_query) |
+            Q(manufacturer__icontains=search_query) |
+            Q(category__icontains=search_query) |
+            Q(description__icontains=search_query)
+        )
 
         # Сортировка
-        if sort_order == 'asc':
-            products = products.order_by('stock')
-        elif sort_order == 'desc':
-            products = products.order_by('-stock')
+    if sort_order == 'asc':
+        products = products.order_by('stock')
+    elif sort_order == 'desc':
+        products = products.order_by('-stock')
 
         # Фильтрация по категории
-        if category_filter and category_filter != 'all':
-            products = products.filter(category=category_filter)
+    if category_filter and category_filter != 'all':
+        products = products.filter(category=category_filter)
 
     context = {
         'products': products,
