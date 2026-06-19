@@ -1,4 +1,4 @@
-## Онлайн-каталог парфюмерной продукции 
+## Онлайн-каталог парфюмерной продукции https://parfumestoreonline-catalog.ru/
 
 ### Описание
 
@@ -19,5 +19,3 @@
 - **Django**
 - **PostgreSQL**
 - **HTML5**
-- **CSS3**
-- **JavaScript (Fetch API)**
